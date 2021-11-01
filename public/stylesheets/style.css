@@ -146,3 +146,58 @@ p {
     background-color: rgba(255, 255, 255, 1);
     border-radius: var(--border-radius);
 }
+ 
+.icon-danger {
+    color: rgb(255, 70, 70);
+}
+
+.icon-success {
+    color: rgb(29, 153, 255);
+}
+/* CARDS */
+
+.card {
+    margin: 0 0 20px 0;
+    border: 2px solid var(--dark);
+    border-radius: var(--border-radius);
+}
+
+.card-header {
+    color: var(--primary);
+    background-color: var(--dark);
+    padding: 1%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+}
+
+.card-body {
+    padding: 1%;
+}
+
+h4 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--light-dark);
+    line-height: 1.25;
+}
+
+.link {
+    color: var(--light-dark);
+}
+
+.login-link {
+    color: var(--dark);
+}
+
+.nav {
+    padding: 10px;
+    line-height: 1.25;
+    float: top;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
