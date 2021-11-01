@@ -201,3 +201,65 @@ footer {
     padding: 1%;
     font-size: 110%;
 }
+.form-label,
+.form-input,
+.form-textarea {
+    display: block;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
+    border-radius: var(--border-radius);
+}
+
+.min-100-vh {
+    min-height: 100vh;
+}
+
+.min-100-vw {
+    min-width: 100vw;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-flex-start {
+    justify-content: flex-start
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
