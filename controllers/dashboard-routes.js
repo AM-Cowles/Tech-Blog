@@ -68,3 +68,16 @@ router.get('/edit/:id', withAuth, (req, res) => {
                 return;
             }
             
+            const post = dbPostData.get({ plain: true });
+            res.render('edit-post', { post, loggedIn: true });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+})
+router.get('/new', (req, res) => {
+    res.render('new-post');
+});
+
+module.exports = router;
