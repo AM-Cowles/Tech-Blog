@@ -35,6 +35,7 @@ router.get('/', (req, res) => {
         });
         
 });
+
 router.get('/:id', (req, res) => {
     Post.findOne({
             where: {
@@ -71,6 +72,7 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
+
 router.post('/', withAuth, (req, res) => {
     Post.create({
             title: req.body.title,
@@ -104,3 +106,22 @@ router.put('/:id', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
+
+router.delete('/:id', withAuth, (req, res) => {
+    Post.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(dbPostData => {
+        if (!dbPostData) {
+            res.status(404).json({ message: 'No post found with this id' });
+            return;
+        }
+        res.json(dbPostData);
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+module.exports = router;
