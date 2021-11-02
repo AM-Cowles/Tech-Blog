@@ -1,11 +1,8 @@
 # Tech Blog
 
-# Model View Controller Practice
-[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-
 ## Description 
 >*A project to practice separation of concerns (Model View Controller - MVC) as well as learn how to use the Handlebars.js templating engine.*
-[View Deployed Version Here](http://mvc-unh.herokuapp.com/)
+[View Deployed Version Here]()
 -----------
 
 ![Screenshot Demo](images/homepage.png)
@@ -36,12 +33,11 @@ This project is hosted on Heroku and utilizes JawsDB. The .env is not uploaded t
 -----------
 
 ## Usage 
-You are free to use this for learning purposes. The idea is not my own save for some light creative design. This was a homework for Trilogy Full Stack Developer coding bootcamp associated with the University of New Hampshire.
-
+This project was a homework assignment for MSU - Michigan State University full stack web development coding bootcamp.
 -----------
 
 ## License 
-This project was created under the MIT License.
+This project was created under the MIT License. [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 -----------
 
@@ -106,11 +102,6 @@ If at this point you are unable to get the project up and running, feel free to 
 [Fix for Sequelize turning floats into strings](https://github.com/sequelize/sequelize/issues/8019)
  
 -----------
-
-## Questions 
-GitHub: https://github.com/Pythonidaer
-
-For additional information, please reach out to codefolio.work@gmail.com
 
 <a href="https://twitter.com/jonamichahammo">
     <img alt="Twitter: jonamichahammo" src="https://img.shields.io/twitter/follow/jonamichahammo.svg?style=social" target="_blank" />
