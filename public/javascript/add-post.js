@@ -1,25 +1,29 @@
+// this function corresponds to the add-post form
 async function newFormHandler(event) {
     event.preventDefault();
 
+    // capture the values of a form considered to be "add-post"
     const title = document.querySelector('input[name="post-title"]').value;
-    const content = document.querySelector('input[name="content"]').value;
+    const content = document.querySelector('textarea[name="content"]').value;
 
+    // post stringified data to the post-routes folder of our routes
     const response = await fetch(`/api/posts`, {
-    method: 'POST',
-    body: JSON.stringify({
-        title,
-        content
-    }),
-    headers: {
-        'Content-Type': 'application/json'
-    }
+        method: 'POST',
+        body: JSON.stringify({
+            title,
+            content
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
     });
 
+    // once our route is received properly, re-direct user to dashboard
     if (response.ok) {
-    document.location.replace('/dashboard');
+        document.location.replace('/dashboard');
     } else {
-    alert(response.statusText);
+        alert(response.statusText);
     }
 };
 
-document.querySelector('#new-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('#add-post-form').addEventListener('submit', newFormHandler);
