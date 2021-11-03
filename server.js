@@ -52,7 +52,7 @@ const sess = {
 // this will also have access to the route events the user triggers
 app.use(session(sess));
 
-
+app.use(express.static('public'));
 
 
 // Inform Express.js on which template engine to use
