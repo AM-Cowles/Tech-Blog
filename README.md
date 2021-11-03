@@ -42,7 +42,7 @@ This project was created under the MIT License. [![License](https://img.shields.
 -----------
 
 ## Contributing 
-I am not looking for contributors, but please reach out to me if you are looking for contributors on projects. I may be able to help out with HTML/CSS/JavaScript or perhaps some debugging.
+There are no other contributors on this project.
 
 -----------
 
